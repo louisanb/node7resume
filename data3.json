@@ -1,0 +1,63 @@
+{
+  "speakers": [{
+    "title" : "CAD Models",
+    "name": "3D printing projects",
+    "photod" : "Glass AutoCAD Model",
+    "shortname": "cad",
+    "photo" : "glass2",
+    "sp" : "3D printed CAD models from 3D printers on campus.",
+    "description" : "The stuff school teaches students is way not enough as it is just an introdection to a field. I realized this when i lost an internship opportunity due to lack of solidworks skill. Ever since then I had been sharpening my solidworks skill in my spire time. Now I am confident with my solidworks skill that I am no less experience than a person who had intership experience in solidworks modeling.",
+    "summary": "xxLorenzo was born in Mexico, but grew up in Southern California after his mother immigrated to Los Angeles when he was a year old. His mother worked as a seamstress in the Fashion District and brought home scrap materials for Lorenzo to create his early mixed media art. From that point on, Lorenzo became hooked on creating art from scrap metals, fabrics, wood, canvas, and many others. During his junior year at Bischon Art School in Los Angeles, he perfected his own proprietary method of painting on canvas with ceramic glaze, which he will demonstrate on Monday in his session, 'Art in Full Bloom'.Lorenzo paints with an extraordinary amount of color, and prefers to create art centered around nature, animals, and science. Now in his senior year at Bischon, Lorenzo has been creating mixed media totem poles made from old telephone poles, and other recycled materials, and is already planning his next new technique that will likely inspire a trend for years to come.",
+    "artwork": ["wheel_rim.jpg", "glass.jpg", "glass2.jpg", "carphone holder.jpg", "bracket wrist ball.jpg", "bracket wrist.jpg", "nail.jpg", "revolve propaller.jpg", "null surface for nail trimming.jpg", "pipe.jpg", "loft.jpg", "helix.jpg", "prapaller top.jpg", "waterf2.jpg", "mouse.jpg", "comp loft 2.jpg", "bolts.jpg", "curve ball.jpg", "gear box.jpg", "warm wheel.jpg", "IMG_6386.jpg", "IMG_6389.jpg", "IMG_6390.jpg", "house.jpg"],
+    "p1": ["wheel_rim.jpg", "glass.jpg", "glass2.jpg", "carphone holder.jpg", "bracket wrist ball.jpg", "bracket wrist.jpg", "nail.jpg", "revolve propaller.jpg", "null surface for nail trimming.jpg", "pipe.jpg", "loft.jpg", "helix.jpg", "prapaller top.jpg", "waterf2.jpg", "mouse.jpg", "comp loft 2.jpg", "bolts.jpg", "curve ball.jpg", "gear box.jpg", "warm wheel.jpg"],
+    "p2": ["IMG_6386.jpg", "IMG_6389.jpg", "IMG_6390.jpg", "house.jpg"]
+  },{
+    "title" : "Arduino",
+    "name": "Raspberry Pi projects",
+    "photod" : "Arduino project",
+    "shortname": "Arduino",
+    "photo" : "IMG_4726",
+    "sp" : "Worked with Rpi to collect some data and send to Arduino to save all the data at the same place. Used Arduino because it is easier to work with some sensors in Arduino platform due to built-in protections Arduino has.",
+    "description" : "The first two pictures are from a tracking device that I designed in Arduino platform with sensors, such as GPS, IMU, Humidity&Temperature etc. It tracks locations and time of events such as tilt(pitch, yaw, roll), which indicates if a shippment had fall or roll over inside a truck or so. The last picture is from an air quality testing device with I designed in Arduino platform (Test CO2, SO2, CO, NO2, NO etc.) ",
+    "summary": "At my internships, I built a tracking device, which used IMU and GPS to detect if a package had follen and at where, and an ambient air pullotion/component analyzer. Working on my own gave me an opportunity to improve my problem solving skill tremendously.",    
+    "artwork" : ["IMG_4726.jpg", "IMG_4727.jpg", "arduino_air.jpg", "IMG_6023.jpg", "IMG_6155.jpg"],
+    "p1": ["IMG_4726.jpg", "IMG_4727.jpg", "arduino_air.jpg"],
+    "p2": ["IMG_6023.jpg", "IMG_6155.jpg"]
+  },{
+    "title" : "CapStone",
+    "name": "CS projects",
+    "photod" : "CapStone project",
+    "shortname": "cap",
+    "photo" : "IMG_1996",
+    "sp" : "I made games like balckjack, head or tail and a very simple number guess game to get to know and learn C++.",
+    "summary": "The leader of the MMA artistic movement in his hometown of Portland, Riley Rudolph Rewington draws a crowd wherever he goes. Mixing street performance, video, music, and traditional art, Riley has created some of the most unique and deeply poignant abstract works of his generation.",
+    "description": "The cleaning device needs to be installed on the panel and is moblelized by a motor. Autonomous functionality is enabled by two ultrasonic sensors on the sides of the brush. It only needs to push a botton to start the system and is able to duck on the side of the panel when not in use.",
+    "artwork" : ["IMG_1996.jpg", "IMG_1992.jpg", "IMG_1975.jpg", "IMG_2001.jpg", "enter_h_for_bet_freakout.jpg", "neither_yes_no.jpg", "28_max_min_from_random_pic.jpg","cap1.jpg", "cap2.jpg", "cap3.jpg", "cap4.jpg", "cap5.jpg", "cap6.jpg", "cap7.jpg"],
+    "p1": ["IMG_1996.jpg", "IMG_1992.jpg", "IMG_1975.jpg", "IMG_2001.jpg", "IMG_6300.jpg", "IMG_6299.jpg", "cap1.jpg", "cap2.jpg", "cap3.jpg", "cap4.jpg", "cap5.jpg", "cap6.jpg", "cap7.jpg"],
+    "p2": ["enter_h_for_bet_freakout.jpg", "neither_yes_no.jpg", "28_max_min_from_random_pic.jpg"]
+  }],
+
+  "social" : [{
+    "shortname" : "linkedin",
+    "img" : "/images/socialmedia/linkedin.png",
+    "url" : "http://www.linkedin.com"
+  },{
+    "shortname" : "twitter",
+    "img" : "/images/socialmedia/twitter.png",
+    "url" : "https://twitter.com/intent/tweet?text=https://louisanresume.herokuapp.com please keep the address of the web when share/post it, because a default description and preview image of the website has built-in in that address. It will appear on the post after you post it. You can delete these comment (besides the address) and add your own!"
+  },{
+    "shortname" : "facebook",
+    "img" : "/images/socialmedia/facebook.png",
+    "url" : "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnod7.herokuapp.com%2F&amp;src=sdkpreparse"
+  }],
+
+  "meeting" : {
+    "date": "Thursday, March 27th",
+    "time": "6-9pm",
+    "where": {
+      "name": "Hotel Gwendoline",
+      "img": "/images/misc/hotel_gwendoline.jpg",
+      "address": "123 Elm Street"
+    }
+  }
+}

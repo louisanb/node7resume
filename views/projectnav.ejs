@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8">
+  <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/styles2.css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"></head>
+  <body><!-- <body class="<%= page %>">  use this to make inspect the speaker page bocay has the class of home or spearker like the one in inspect the home page it wont matter here since it was introduced to fix the home pg layout but if you want diff style based on pg to pg then it matters -->
+    <% include partials/template/header.ejs %>
+  <article class="speakerslist">
+ 	 <section class="layout">
+  	 <div class="speakers">
+      <% artists.forEach(function(item){ %> 
+       <!--  <article class="artist"> -->
+       <article class="artists">
+   	    <h3 ><%= item.title %></h3>
+   	   <!-- <p><img class="speaker" src="/images/resume/<%= item.photo %>.jpg" alt="photo of <%= item.photod %>" ></p> -->
+   			<p><% if (page!='home'){ %><!-- //if not home page   -->
+   			 <% if(page=='artistlist'){ %>
+   			   <%- item.summary %>
+   		     <% }else{ %><!-- if page=artistlist -->
+   		   	  <%- item.description %><!-- if project page -->
+   	         <% } %><!-- else -->
+   		    <% } %><!-- if page!=home --></p>
+       </artists>
+<!-- onmouseover="bigImg(this)" onmouseout="normalImg(this)" --> 
+       <article class="artists">
+        <p>
+         <%if (page=='artistDetail'){%>
+          <% if (item.p1.length>0){%>
+            <% for (i=0; i<item.p1.length; i++){%>
+             <img id="inner" src="https://s3.amazonaws.com/louisanresume.com/resume/<%= item.p1[i] %>" alt="<%= item.p1[i] %>">
+            <%}%><!-- for -->
+          <%}%><!-- if  -->
+         <%}%><!-- if page -->
+        </p>
+       </article>
+        
+         <%if (speakerid=='cap'){%>
+         <video width="400" controls>
+          <source src="/images/resume/IMG_1990.MOV" type="video/mp4">
+          Your browser does not support HTML5 video.
+         </video>
+        <%}%>
+
+       <article class="artists"><!-- if p put here then it wont be a p which means it did not work cuz text color becom default body #47DBA6 -->
+         <!-- <p> --><h3><%=item.name%></h3>
+        <p><% if (page!='home'){ %><!--if not home page-->
+         <% if(page=='artistlist'){ %><!-- if project page -->
+           <%- item.summary %>
+           <% }else{ %><!-- if page=artistlist -->
+            <%- item.sp %>
+             <% } %><!-- else -->
+          <% } %><!--if page!=home-->
+        </p>
+         </artists>
+
+         <article class="artists">
+        <p>
+         <%if (page=='artistDetail'){%>
+          <% if (item.p2.length>0){%>
+            <% for (i=0; i<item.p2.length; i++){%><!-- <a download="custom-filename.jpg" href="/images/resume/bolts" title="ImageName"> -->
+             <!-- <ss id="outer"> -->
+        <img id="inner" src="https://s3.amazonaws.com/louisanresume.com/resume/<%= item.p2[i] %>" alt="<%= item.p2[i] %>"><!-- </ss> --><!-- </a> -->
+            <%}%><!-- for -->
+          <%}%><!-- if  -->
+         <%}%><!-- if page -->
+        </p>
+       </article>
+
+   	    <% }); %> <!-- forEach -->
+          
+  		</div><!-- speakers -->
+ 	   </section><!-- layout -->
+	  </article><!-- speakerslist -->
+
+<!-- <img class="speaker" src="/images/speakers/Lorenzo_Garcia_tn.jpg" alt="photo of" >
+
+<img src="/images/resume/glass2.jpg" alt="glassx model in AutoCAD" class="speaker"> -->
+
+
+<!--     <div class="zoom"><img src="/images/resume/bolts"></div> -->
+<!--<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition-property: width; 
+    -webkit-transition-duration: 5s; 
+    transition-property: width;
+    transition-duration: 5s;
+}
+div:hover {
+    width: 300px;
+}
+<div></div>-->
+<!-- <div class="move"></div> -->
+</style>
+ <script>
+      function bigImg(x) {
+          x.style.height = "300px";
+          x.style.width = "300px";
+          // transition-duration: 5s;
+
+      }
+
+      function normalImg(x) {
+          x.style.height = "100px";
+          x.style.width = "100px";
+      }
+     </script>
+    <!--  <p><a href="#"><img src="images/resume/glass2.jpg" alt="glass model in AutoCAD" class="speaker"></a></p>
+<p><img src="/images/resume/bolts"></p>
+<div class="outer">
+    <div class="inner"><img src="/images/resume/bolts"></div>
+</div> -->
+
+     <% include partials/template/footer.ejs %>
+     <% include partials/template/jsdefault.ejs %>
+
+  </body>
+ </html>

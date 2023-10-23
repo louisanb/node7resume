@@ -1,0 +1,9 @@
+<article class="socialmediaicons">
+ <span class="title">Help me spread out the word: </span>
+ <ul class="group">
+ <% appdata2.social.forEach(function(item){%>
+ <!-- item is a temprary var and this is EJS command the <pers. is the same as PHP and the following is js-->
+<li><a href="<%= item.url %>"><img class="icon" src="<%= item.img %>" alt="icon for <%= item.shortname %>"></a></li>
+ <% }); %>
+<!--  Send me an email: louisanb2010@live.cn -->
+</article>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body> <class="<%= page %>">
+  <% include partials/template/header.ejs %>
+     <div class="speakerslist">
+    <section class="layout">
+
+      <h1><i class="fa fa-fighter-jet" aria-hidden="true"></i>check out my projects</h1>
+
+      <div class="Speakers">
+        <!-- article.artist*>h3>{Title}^p>a[href="#"]>img.speaker[src="images/speakers/$#_tn.jpg" alt="Photo of $#"]^^p>Lorem -->
+
+      <article class="artist">
+        <h3>CAD models<span class="small"> and
+        <a href="/projectnav/cad">3D printing projects</a></span></h3>
+        <p><a href="/projectnav/cad"><img src="images/resume/glass2.jpg" alt="glass model in AutoCAD" class="speaker"></a></p>
+        <p>In my spire time I always try to sharpen my solidworks skill by watching online tutorials or vedios and making parts that i found interesting. I also familiarized myself with AutoCAD which school did not teach.</p>
+      </article>
+
+      <article class="artist">
+        <h3>Arduino<span class="small"> and
+         <a href="/projectnav/Arduino">Raspberry Pi projects</a></span></h3>
+         <p><a href="/projectnav/Arduino"><img src="https://s3.amazonaws.com/louisanresume.com/resume/IMG_4726.jpg" alt="Photo of an Arduino project" class="speaker"></a></p>
+         <p>I learned Arduino on the side of school from YouTube. I had lots of fun working on Arduino projects at my internships in that field. While learning and doing Arduino, my interests in coding arised.</p>
+      </article>
+
+      <article class="artist">
+         <h3>CapStone<span class="small"> and
+         <a href="/projectnav/cap">CS projects</a></span></h3>
+         <p><a href="/projectnav/cap"><img src="https://s3.amazonaws.com/louisanresume.com/resume/IMG_1996.jpg" alt="Photo of Capstone project" class="speaker"></a></p>
+         <p>My Capstone project is an autonomous solar panel cleaning device. To check a vedio of it please click "Capstione" in the navigation bar. In this section, you can also find some simple games i made to learn and practice some very basic C++.</p>
+      </article><!-- artist -->
+      </div><!-- speakers -->
+    </section><!-- layout -->
+  </div><!--speakerslist -->
+  
+  	<section class="layout"><!-- html -->
+  	 <div class="primary">
+      
+          <!-- <video width="400" controls>
+          <source src="images/resume/IMG_1990.MOV" type="video/mp4">
+          Your browser does not support HTML5 video.
+         </video> -->
+
+    <% include partials/content/whoarewe.ejs %>
+    <% include partials/content/skills.ejs %>
+    <!--  include partials/content/ads.ejs  -->
+   	 </div><!-- primary -->
+
+     <aside class="secondary">
+       <article id="nextmeeting">
+        <h1><i class="fa fa-user" aria-hidden="true"></i>About me</h1>
+        <a href="#"><img src="https://s3.amazonaws.com/louisanresume.com/public/images/resume/me.JPG" alt="My photo"></a>
+       <!--  <p><img src="images/misc/hotel_gwendoline.jpg" alt="location">
+       aaaaaaaaaaaaaaaaaa</p> -->
+       <p>louis ME major at UNR looking for a full time or part time either in my major or in CS such as web/phone app development.</p>
+       <div class="email"><a download="Qiyu_An's resume.txt from github" href="https://s3.amazonaws.com/louisanresume.com/Qiyu_An_Job_Application.docx.pdf" title="ImageName">Download my resume!</a></div>
+
+       </article><!-- nextmeeing -->
+
+<!-- if y comment <persentage sign stuff the web ll act weird with showing somewhere too -->
+       <% include partials/content/socialmedia.ejs %>  
+       <% include partials/content/artworklist.ejs %>
+	   </aside><!-- secondary -->
+  	</section><!-- layout -->
+
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefault.ejs %>
+   
+
+  </body>
+</html>

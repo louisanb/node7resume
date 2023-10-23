@@ -1,0 +1,48 @@
+<html>
+  <head><meta charset="UTF-8">
+  <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/styles2.css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"></head>
+  <body><!-- <body class="<%= page %>">  use this to make inspect the speaker page bocay has the class of home or spearker like the one in inspect the home page it wont matter here since it was introduced to fix the home pg layout but if you want diff style based on pg to pg then it matters -->
+    <% include partials/template/header.ejs %>
+    <div class="speakerslist">
+    <section class="layout">
+      <video width="400" controls>
+          <source src="images/resume/VIDEO0064.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+         </video>
+      <div class="Speakers">
+        <!-- article.artist*>h3>{Title}^p>a[href="#"]>img.speaker[src="images/speakers/$#_tn.jpg" alt="Photo of $#"]^^p>Lorem -->
+      <article class="artist">
+        <h3 align="center">CAD models</h3>
+
+        <p><a href="#"><img src="images/resume/glass2.jpg" alt="glass model in AutoCAD" class="speaker"></a></p>
+        
+        <p style="color:#00CFF2">The stuff school teaches students is way not enough as it is just an introdection to a field. I learned this in a hard way. I missed an internship opportunity due to the lack of solidworks skill. Ever then I had been sharpening my solidworks skill in my spire time. Now I am confident with my solidworks skill that I am no less experience than a person who had intership experiences in solidworks modeling.</p>
+        </article>
+     <article class="artist">
+        <!-- <span>3D printing projects</span> -->
+      <h3 align="center">3D printing projects</h2>
+        <!-- #0ED4FF  #09E4FF -->
+      <p style="color:#00CFF2"><img src="images/resume/IMG_6389.jpg" alt="3D printed glass" class="speaker">3D printed CAD models from 3D printers on campus.</p>
+      </article>
+        </div><!-- speakers -->
+    </section><!-- layout -->
+  </div><!--speakerslist -->
+
+    <!--  <article class="artworklist">
+       <h3>Projects</h1>
+       <p style="color:#00CFF2">While you attend the conference, head over to your gallary check out some of the work from our speakers.</p>
+       <div class="pixgrid">
+       <% if (artwork.length>0){%>
+       <% for (i=0; i<artwork.length; i++){%>
+       <img src="/images/resume/<%= artwork[i] %>" alt="<%= artwork[i] %>"> <! index.js is passing tile and artwork var so we can use them here>
+       <%}%>
+       <%}%> -->
+       </article>
+   <!-- </aside>secondary -->
+    </section><!-- layout -->
+    <% include partials/template/footer.ejs %>
+   <% include partials/template/jsdefault.ejs %>
+  </body>
+</html>
